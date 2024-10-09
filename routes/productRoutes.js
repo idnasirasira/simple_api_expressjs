@@ -4,6 +4,7 @@ const productController = require('../controllers/productController.js');
 const productRoutes = express.Router();
 
 productRoutes.get('/', productController.getProducts);
+productRoutes.get('/:id', productController.getProductById);
 productRoutes.post('/', productController.addProduct);
 productRoutes.put('/', productController.updateProduct);
 productRoutes.delete('/', productController.deleteProduct);

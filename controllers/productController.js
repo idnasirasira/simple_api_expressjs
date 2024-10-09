@@ -8,6 +8,24 @@ exports.getProducts = (req, res) => {
   });
 };
 
+exports.getProductById = (req, res) => {
+  const { id } = req.params;
+  const product = products.find((product) => product.id === parseInt(id));
+
+  if (!product) {
+    return res.status(404).json({
+      status: 'error',
+      message: `Product with ID ${id} not found`,
+    });
+  }
+
+  res.status(200).json({
+    status: 'success',
+    message: `Product with ID ${id}`,
+    data: product,
+  });
+};
+
 exports.addProduct = (req, res) => {
   const { name, price } = req.body;
 
