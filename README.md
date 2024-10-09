@@ -40,3 +40,9 @@ This project is designed as a practice exercise for students to learn Node.js an
 ## License
 
 This project is licensed under the MIT License.
+
+## Postman Collection
+
+You can use the following Postman collection to test the API endpoints:
+
+[Postman Collection Link](https://www.postman.com/kyoora-idnasiraisira/mentoring-class-workspase/collection/26ljent/simple-api-express-js)
